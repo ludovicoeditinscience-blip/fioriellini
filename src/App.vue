@@ -11,15 +11,15 @@
     <template v-if="dialogStep === 'ask'">
       <div style="color: white">Silvia, vuoi uscire con me a San Valentino?</div>
       <div class="dialog-buttons">
-        <button class="fall-button" @click="answerYes">Yes</button>
+        <button class="fall-button" @click="answerYes">Sì</button>
         <button class="fall-button" @click="answerNo">No</button>
       </div>
     </template>
 
     <template v-if="dialogStep === 'sure'">
-      <div style="color: white">sei sicura?</div>
+      <div style="color: white">Sei sicura?</div>
       <div class="dialog-buttons">
-        <button ref="runawayRef" class="fall-button runaway" :style="{ transform: `translate(${runawayOffset.x}px, ${runawayOffset.y}px)` }" @mouseover="moveRunaway" @click="sureYes">Yes</button>
+        <button ref="runawayRef" class="fall-button runaway" :style="{ transform: `translate(${runawayOffset.x}px, ${runawayOffset.y}px)` }" @mouseover="moveRunaway" @click="sureYes">Sì</button>
         <button class="fall-button" @click="sureNo">No</button>
       </div>
     </template>
