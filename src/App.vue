@@ -280,17 +280,15 @@ const gridStyle = computed(() => ({
     position: relative;
 
     &::after {
-      @media (max-width: 767px) {
-        content: '';
-        position: absolute;
-        top: 4px;
-        right: 4px;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background: rgba(255, 100, 150, 0.9);
-        animation: pulse 1.5s ease-in-out infinite;
-      }
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: rgba(255, 100, 150, 0.9);
+      animation: pulse 1.5s ease-in-out infinite;
     }
   }
 
